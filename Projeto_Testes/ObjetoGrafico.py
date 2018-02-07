@@ -25,12 +25,14 @@ class Triangulo(ObjetoGrafico):
         self.altura = altura
 
     def area(self):
-        return (self.altura * self.altura) / 2
+        return (self.altura * self.base) / 2
 
     def perimetro(self):
         pass
 
 from math import pi
+
+
 class Circulo(ObjetoGrafico):
     def __init__(self, cor_preenchimento, preenchido, cor_contorno, raio):
         super().__init__(cor_preenchimento, preenchido, cor_contorno)
