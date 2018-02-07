@@ -2,6 +2,7 @@ import unittest
 from Projeto_Testes.CentroRetangulo import *
 
 
+
 class TestPonto(unittest.TestCase):
     def testPontoConstrutor(self):
         pt = Ponto(2, 3)
@@ -29,9 +30,6 @@ class TestRetangulo(unittest.TestCase):
         ret = Retangulo(pt, 5, 6)
 
         self.assertEqual((3, 4), ret.encontraCentro().imprime())
-
-
-
 
 
 if __name__ == '__main__':
